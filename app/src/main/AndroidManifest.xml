@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="aca.com.hris">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.WithoutActionBar">
+
+
+        <service
+            android:name=".Gcm.MyFcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".Gcm.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+                <!--<action android:name="com.google.android.gms.iid.InstanceID" />-->
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".BaseActivity"
+            android:label="@string/title_activity_base"
+            android:theme="@style/AppTheme.WithoutActionBar" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:label="@string/title_activity_splash_screen"
+            android:theme="@style/AppTheme.WithoutActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".FirstActivity"
+            android:label="@string/title_activity_first"
+            android:theme="@style/AppTheme.WithoutActionBar" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.WithoutActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AbsensiActivity"
+            android:label="@string/title_activity_absensi_form"
+            android:parentActivityName=".AbsensiListActivity"
+            android:theme="@style/AppTheme.WithoutActionBar">
+
+        </activity>
+        <activity
+            android:name=".CutiActivity"
+            android:label="@string/title_activity_cuti_form"
+            android:parentActivityName=".CutiListActivity"
+            android:theme="@style/AppTheme.WithoutActionBar" />
+        <activity
+            android:name=".AbsensiListActivity"
+            android:label="@string/title_activity_absensi_list"
+            android:parentActivityName=".FirstActivity"
+            android:theme="@style/AppTheme.WithoutActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="aca.com.hris.FirstActivity" />
+            <intent-filter>
+                <action android:name="AbsensiListActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CutiListActivity"
+            android:parentActivityName=".FirstActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="aca.com.hris.FirstActivity" />
+            <intent-filter>
+                <action android:name="CutiListActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginRoleActivity"
+            android:label="@string/title_activity_login_role"
+            android:theme="@style/AppTheme.WithoutActionBar" />
+        <activity
+            android:name=".AbsensiApprovalActivity"
+            android:label="@string/title_activity_absensi_approval"
+            android:parentActivityName=".FirstActivity"
+            android:theme="@style/AppTheme.WithoutActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="aca.com.hris.FirstActivity" />
+            <intent-filter>
+                <action android:name="AbsensiApprovalActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CutiApprovalActivity"
+            android:label="@string/title_activity_absensi_cuti_approval"
+            android:parentActivityName=".FirstActivity"
+            android:theme="@style/AppTheme.WithoutActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="aca.com.hris.FirstActivity" />
+            <intent-filter>
+                <action android:name="CutiApprovalActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CutiCancellationActivity"
+            android:label="@string/title_activity_cuti_cancellation_form"
+            android:parentActivityName=".CutiCancellationListActivity"
+            android:theme="@style/AppTheme.WithoutActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="aca.com.hris.CutiCancellationListActivity" />
+        </activity>
+        <activity
+            android:name=".LoadCutiCancellationActivity"
+            android:label="@string/title_activity_cuti_list_for_cancellation"
+            android:parentActivityName=".FirstActivity"
+            android:theme="@style/AppTheme.WithoutActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="aca.com.hris.FirstActivity" />
+        </activity>
+        <activity
+            android:name=".CutiCancellationListActivity"
+            android:label="@string/title_activity_cuti_cancellation_list"
+            android:parentActivityName=".CutiCancellationListActivity"
+            android:theme="@style/AppTheme.WithoutActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="aca.com.hris.CutiCancellationListActivity" />
+            <intent-filter>
+                <action android:name="CutiCancellationListActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CutiCancellationApprovalActivity"
+            android:label="@string/title_activity_cuti_cancellation_approval"
+            android:parentActivityName=".FirstActivity"
+            android:theme="@style/AppTheme.WithoutActionBar">
+
+            <intent-filter>
+                <action android:name="CutiCancellationApprovalActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".AbsensiCancellationActivity"
+            android:label="@string/title_activity_form_cancellation"
+            android:parentActivityName=".AbsensiCancellationListActivity"
+            android:theme="@style/AppTheme.WithoutActionBar" />
+        <activity
+            android:name=".LoadAbsensiCancellationActivity"
+            android:label="@string/title_activity_load_form_cancellation"
+            android:parentActivityName=".FirstActivity"
+            android:theme="@style/AppTheme.WithoutActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="aca.com.hris.FirstActivity" />
+        </activity>
+        <activity
+            android:name=".AbsensiCancellationListActivity"
+            android:label="@string/title_activity_absensi_cancellation_list"
+            android:parentActivityName=".FirstActivity"
+            android:theme="@style/AppTheme.WithoutActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="aca.com.hris.FirstActivity" />
+            <intent-filter>
+                <action android:name="AbsensiCancellationListActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AbsensiCancellationApprovalActivity"
+            android:label="@string/title_activity_absensi_cancellation_approval"
+            android:parentActivityName=".FirstActivity"
+            android:theme="@style/AppTheme.WithoutActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="aca.com.hris.FirstActivity" />
+            <intent-filter>
+                <action android:name="AbsensiCancellationApprovalActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HeaderPickerActivity"
+            android:label="@string/title_activity_header_picker"
+            android:theme="@style/AppTheme.WithoutActionBar" />
+        <activity
+            android:name=".AbsensiViewActivity"
+            android:label="@string/title_activity_absensi_view"
+            android:theme="@style/AppTheme.WithoutActionBar" />
+        <activity
+            android:name=".TestActivity"
+            android:label="@string/title_activity_test"
+            android:theme="@style/AppTheme.WithoutActionBar" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+
+        <activity android:name=".testtActivity"></activity>
+    </application>
+
+</manifest>

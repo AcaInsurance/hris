@@ -1,0 +1,256 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewScrollProfile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="aca.com.hris.Fragment.MyProfilFragment"
+    tools:showIn="@layout/app_bar_first"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/txtNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_medium"
+            android:text="@string/lorem_ipsum"
+            />
+
+
+        <TextView
+            android:id="@+id/txtJabatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/lorem_ipsum"
+            android:textSize="@dimen/text_size_small"
+            />
+
+
+        <android.support.v7.widget.CardView style="@style/my_cardview_style"
+            android:foreground="?selectableItemBackground"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_normal"
+                android:foreground="?attr/selectableItemBackground"
+                >
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_small"
+                    android:gravity="left|center_vertical"
+                    >
+
+                    <EditText
+                        android:id="@+id/txtCabang"
+                        android:drawableLeft="@drawable/ic_business"
+                        android:hint="Cabang"
+                        android:text="@string/lorem_ipsum"
+                        style="@style/profil_text_edittext"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_small"
+                    android:gravity="left|center_vertical">
+
+                    <EditText
+                        android:id="@+id/txtRangking"
+                        android:hint="Rangking"
+                        android:text="@string/lorem_ipsum"
+                        android:drawableLeft="@drawable/ic_star"
+                        style="@style/profil_text_edittext" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_small"
+                    android:gravity="left|center_vertical">
+
+                    <EditText
+                        android:id="@+id/txtSisaCuti"
+                        android:hint="Sisa Cuti"
+                        android:text="@string/lorem_ipsum"
+                        android:drawableLeft="@drawable/ic_beach_access"
+                        style="@style/profil_text_edittext" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView style="@style/my_cardview_style">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_normal"
+
+                >
+
+                <TextView
+                    android:id="@+id/txtBulanBerjalanWhole"
+                    style="@style/profil_textview_cardview_caption"
+                    android:text="Bulan"
+                    />
+
+                <View
+                    style="@style/profil_view_horizontal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout style="@style/profil_linearlayout">
+
+                        <TextView
+                            style="@style/profil_textview"
+                            android:text="Telat" />
+
+                        <TextView
+                            android:id="@+id/txtTelatHariWhole"
+                            style="@style/profil_textview_detail"
+                            />
+
+                    </LinearLayout>
+
+
+                    <View
+
+                        style="@style/profil_view_vertical" />
+
+                    <LinearLayout style="@style/profil_linearlayout">
+
+                        <TextView
+                            style="@style/profil_textview"
+                            android:text="Menit Telat" />
+
+                        <TextView
+                            android:id="@+id/txtTelatMenitWhole"
+                            style="@style/profil_textview_detail" />
+
+                    </LinearLayout>
+
+                    <View
+
+                        style="@style/profil_view_vertical" />
+
+                    <LinearLayout style="@style/profil_linearlayout">
+
+                        <TextView
+                            style="@style/profil_textview"
+                            android:text="Mangkir" />
+
+                        <TextView
+                            android:id="@+id/txtMangkirWhole"
+                            style="@style/profil_textview_detail" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView style="@style/my_cardview_style">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_normal">
+
+                <TextView
+                    android:id="@+id/txtBulanBerjalan"
+                    style="@style/profil_textview_cardview_caption" />
+
+                <View
+
+                    style="@style/profil_view_horizontal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout style="@style/profil_linearlayout">
+
+                        <TextView
+                            style="@style/profil_textview"
+                            android:text="Telat" />
+
+                        <TextView
+                            android:id="@+id/txtTelatHari"
+                            style="@style/profil_textview_detail"  />
+
+                    </LinearLayout>
+
+
+                    <View
+
+                        style="@style/profil_view_vertical" />
+
+                    <LinearLayout style="@style/profil_linearlayout">
+
+                        <TextView
+                            style="@style/profil_textview"
+                            android:text="Menit Telat" />
+
+                        <TextView
+                            android:id="@+id/txtTelatMenit"
+                            style="@style/profil_textview_detail" />
+
+                    </LinearLayout>
+
+
+                    <View
+
+                        style="@style/profil_view_vertical" />
+
+                    <LinearLayout style="@style/profil_linearlayout">
+
+                        <TextView
+                            style="@style/profil_textview"
+                            android:text="Mangkir" />
+
+                        <TextView
+                            android:id="@+id/txtMangkir"
+                            style="@style/profil_textview_detail" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+

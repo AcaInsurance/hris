@@ -1,0 +1,250 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="colorAccent">@color/colorPrimary</item>-->
+    </style>
+
+    <style name="AppTheme.WithoutActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <item name="android:itemTextAppearance">
+            @style/Base.TextAppearance.AppCompat.Widget.ActionBar.Menu
+        </item>
+    </style>
+
+    <style name="TextBodyLarge">
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textColor">@color/background_material_dark</item>
+
+    </style>
+
+    <style name="SplashScreenStyle">
+        <item name="android:padding">0dp</item>
+        <item name="android:windowBackground">@color/material_blue_grey</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.WithoutActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.WithoutActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="login_text">
+        <item name="android:tint">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+        <item name="android:scaleHeight">50%</item>
+    </style>
+
+    <style name="profile_text">
+        <item name="android:padding">@dimen/profile_text_height</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+
+    <style name="absensi_text">
+        <item name="android:padding">@dimen/profile_text_height</item>
+        <!--<item name="android:layout_marginLeft">100dp</item>-->
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+
+    </style>
+
+
+    <style name="absensi_row">
+        <item name="android:layout_marginLeft">@dimen/absensi_row_height</item>
+    </style>
+
+
+    <style name="TextInputLayout">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="text_caption_cardview">
+        <item name="android:textSize">?android:textAppearanceLarge</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorAccent</item>
+
+    </style>
+
+
+    <!-- Floating action button-->
+
+    <style name="menu_labels_style">
+        <item name="android:background">@color/colorPrimaryLight</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:padding">@dimen/spacing_small</item>
+    </style>
+
+    <style name="edittext_tint_profile">
+        <item name="android:tint">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorTransculent</item>
+        <item name="colorControlActivated">@color/colorTransculent</item>
+        <item name="colorControlHighlight">@color/colorTransculent</item>
+    </style>
+
+    <style name="profil_linearlayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="profil_textview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="profil_textview_detail">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="profil_view_vertical">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+    <style name="profil_view_horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:background">@color/colorDivider</item>
+    </style>
+
+    <style name="my_cardview_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/spacing_small</item>
+        <item name="cardBackgroundColor">@android:color/white</item>
+        <item name="cardCornerRadius">5dp</item>
+        <item name="cardElevation">5dp</item>
+        <item name="cardMaxElevation">5dp</item>
+        <item name="cardUseCompatPadding">false</item>
+        <item name="cardPreventCornerOverlap">true</item>
+        <item name="android:foreground">?selectableItemBackground</item>
+
+    </style>
+
+    <style name="profil_textview_cardview_caption">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="profil_text_edittext">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:theme">@style/edittext_tint_profile</item>
+        <item name="android:drawableTint" tools:ignore="NewApi">@color/colorPrimary</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+
+    <style name="form_edittext">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left|center_vertical</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <!--<item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>-->
+    </style>
+
+
+    <style name="style_textview_recyclerview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left|center_vertical</item>
+        <item name="android:theme">@style/edittext_tint_profile</item>
+        <item name="android:editable">false</item>
+        <!--<item name="android:drawableLeft">@drawable/ic_notes</item>-->
+
+    </style>
+
+    <style name="my_textinputlayout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_small</item>
+        <item name="android:padding">@dimen/spacing_small</item>
+    </style>
+
+    <style name="linearlayout_form">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/spacing_small</item>
+    </style>
+
+    <style name="spinner_form" parent="Widget.AppCompat.Spinner.Underlined">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:spinnerMode">dialog</item>
+    </style>
+
+    <style name="button_form_dialog" parent="Base.Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:drawableTint" tools:ignore="NewApi">@color/colorPrimary</item>
+        <item name="android:padding">@dimen/spacing_normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/secondary_text_light</item>
+        <item name="android:drawablePadding">@dimen/spacing_small</item>
+    </style>
+
+
+    <style name="edittext_login">
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorControlActivated">@android:color/white</item>
+        <item name="colorControlHighlight">@android:color/white</item>
+
+    </style>
+
+    <style name="style_textinputlayout_recyclerview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_small</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryText</item>
+        <item name="android:background">@color/mdtp_white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

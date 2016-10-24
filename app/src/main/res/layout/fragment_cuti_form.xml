@@ -1,0 +1,216 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include layout="@layout/layout_loading_circle"/>
+
+
+
+        <android.support.v4.widget.NestedScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/viewScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context=".Fragment.CutiFragment"
+            tools:showIn="@layout/activity_cuti_form"
+            >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <android.support.v7.widget.CardView style="@style/my_cardview_style">
+
+                        <LinearLayout style="@style/linearlayout_form">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/lblTanggalTransaksi"
+                                style="@style/my_textinputlayout_style"
+                                android:hint="Tanggal Transaksi"
+                                android:visibility="gone">
+
+                                <EditText
+                                    android:id="@+id/txtTanggalTranskasi"
+                                    style="@style/form_edittext"
+                                    android:drawableLeft="@drawable/ic_invitation" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/lblApprover"
+                                style="@style/my_textinputlayout_style"
+                                android:hint="Approver">
+
+
+                                <EditText
+                                    android:id="@+id/txtApprover"
+                                    android:focusableInTouchMode="false"
+                                    style="@style/form_edittext"
+                                    />
+
+                            </android.support.design.widget.TextInputLayout>
+
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/lblCuti"
+                                style="@style/my_textinputlayout_style"
+                                android:hint="Cuti">
+
+                                <EditText
+                                    android:id="@+id/txtCuti"
+                                    style="@style/form_edittext"
+                                    android:focusableInTouchMode="false"
+
+                                    />
+
+                            </android.support.design.widget.TextInputLayout>
+
+
+
+                            <Button android:id="@+id/btnTipeCuti"
+                                style="@style/button_form_dialog"
+                                android:hint="Pilih Tipe Cuti"
+                                android:drawableLeft="@drawable/ic_description"
+                                />
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/lblMaxCuti"
+                                style="@style/my_textinputlayout_style"
+                                android:hint="Max Cuti">
+
+                                <EditText
+                                    android:id="@+id/txtMaxCuti"
+                                    style="@style/form_edittext"
+                                    android:focusableInTouchMode="false"
+
+                                    />
+
+                            </android.support.design.widget.TextInputLayout>
+
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/txtKeterangan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/spacing_normal"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <android.support.v7.widget.CardView style="@style/my_cardview_style">
+
+                        <LinearLayout style="@style/linearlayout_form">
+
+                            <Button
+                                android:id="@+id/btnTanggalMulai"
+                                style="@style/button_form_dialog"
+                                android:drawableLeft="@drawable/ic_date_range"
+                                android:hint="Tanggal Mulai"
+                                />
+
+                            <Button
+                                android:id="@+id/btnTanggalBerakhir"
+                                style="@style/button_form_dialog"
+                                android:drawableLeft="@drawable/ic_date_range"
+                                android:hint="Tanggal Berakhir" />
+
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/lblJumlahHari"
+                                style="@style/my_textinputlayout_style"
+                                android:hint="Jumlah Hari"
+                                >
+
+                                <EditText
+                                    android:id="@+id/txtJumlahHari"
+                                    style="@style/form_edittext"
+                                    android:focusableInTouchMode="false"
+
+                                    />
+
+                            </android.support.design.widget.TextInputLayout>
+
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/lblJumlahCuti"
+                                style="@style/my_textinputlayout_style"
+                                android:hint="Jumlah Cuti">
+
+                                <EditText
+                                    android:id="@+id/txtJumlahCuti"
+                                    style="@style/form_edittext"
+                                    android:focusableInTouchMode="false"
+                                    />
+
+                            </android.support.design.widget.TextInputLayout>
+
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/lblJumlahPotongCuti"
+                                style="@style/my_textinputlayout_style"
+                                android:hint="Jumlah Potong Cuti">
+
+                                <EditText
+                                    android:id="@+id/txtJumlahPotongCuti"
+                                    style="@style/form_edittext"
+                                    android:focusableInTouchMode="false"
+
+                                    />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/lblAlasan"
+                                style="@style/my_textinputlayout_style"
+                                android:hint="Alasan">
+
+                                <EditText
+                                    android:id="@+id/txtAlasan"
+                                    style="@style/form_edittext" />
+
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView style="@style/my_cardview_style">
+
+                   <LinearLayout style="@style/linearlayout_form">
+
+
+                       <android.support.design.widget.TextInputLayout
+                           android:id="@+id/lblSisaCuti"
+                           style="@style/my_textinputlayout_style"
+                           android:hint="Sisa Cuti">
+
+                           <EditText
+                               android:id="@+id/txtSisaCuti"
+                               style="@style/form_edittext"
+                               android:focusableInTouchMode="false"
+
+                               />
+
+                       </android.support.design.widget.TextInputLayout>
+
+                   </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

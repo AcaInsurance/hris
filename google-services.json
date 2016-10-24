@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1081839678392",
+    "firebase_url": "https://hris-13965.firebaseio.com",
+    "project_id": "hris-13965",
+    "storage_bucket": "hris-13965.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081839678392:android:22c62b15e8cdb6ff",
+        "android_client_info": {
+          "package_name": "aca.com.hris"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1081839678392-4lv8jgqqitb8djtnfrbvdqvdq6v3eg12.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtMfqfPdveAFt3r6IeLLhu1jGhVyNiu1s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,147 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="aca.com.hris.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView android:id="@+id/imgBackground"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_login_background"
+            android:background="@drawable/login_background" />
+
+        <ImageView android:id="@+id/imgLogo"
+            android:layout_width="@dimen/splash_logo_width"
+            android:layout_height="@dimen/splash_logo_heigh"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:src="@drawable/logoaca"
+
+            />
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/email_login_form"
+                android:layout_below="@id/imgBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardElevation="@dimen/cardview_default_elevation"
+                app:cardCornerRadius="@dimen/cardview_default_radius"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:paddingTop="@dimen/spacing_normal"
+                    >
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/lblEmail"
+                        style="@style/my_textinputlayout_style"
+                        android:hint="@string/prompt_userID"
+                        >
+
+                        <EditText
+                            android:id="@+id/email"
+                            style="@style/form_edittext"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/lblPassword"
+                        style="@style/my_textinputlayout_style"
+                        android:hint="@string/prompt_password"
+                        >
+                        <EditText
+                            android:id="@+id/password"
+                            style="@style/form_edittext"
+
+                            android:imeActionId="@+id/login"
+                            android:imeActionLabel="@string/action_sign_in_short"
+                            android:imeOptions="actionGo"
+                            android:inputType="textPassword"
+
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/email_sign_in_button"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/action_sign_in_short"
+                        android:textColor="@color/colorPrimary"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                        android:layout_marginBottom="@dimen/spacing_normal"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Forgot your password ?"
+                        android:padding="@dimen/spacing_normal"
+                        android:visibility="gone"
+                        />
+
+
+                    <ProgressBar
+                        android:id="@+id/login_progress"
+                        style="@style/Base.Widget.AppCompat.ProgressBar"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:visibility="gone"
+                        />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+    <!--</ScrollView>-->
+
+
+    <ImageView
+        android:layout_width="@dimen/size_logo_anniv"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_anniv"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+
+        />
+
+    <TextView android:id="@+id/lblCopyRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_copyright"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="@dimen/spacing_normal"
+        android:visibility="gone"
+        />
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

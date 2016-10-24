@@ -1,0 +1,30 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"  >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <FrameLayout
+            android:id="@+id/fragmentHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            class ="aca.com.hris.Fragment.AbsensiCancellationFragment"
+            />
+
+        <FrameLayout
+            android:id="@+id/fragmentDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            class="aca.com.hris.Fragment.AbsensiFragment"
+            />
+    </LinearLayout>
+</LinearLayout>

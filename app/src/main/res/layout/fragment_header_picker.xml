@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aca.com.hris.HeaderPickerActivity"
+    tools:showIn="@layout/activity_header_picker"
+    android:orientation="vertical"
+    android:background="@color/black_de"
+    >
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/view3"
+        android:layout_above="@+id/gallery1"
+        android:background="@color/black_de"
+        />
+
+    <Gallery
+        android:id="@+id/gallery1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSelect"
+        android:background="@color/black_de"
+        />
+
+    <Button android:id="@+id/btnSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Cover"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/spacing_small"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        />
+
+</RelativeLayout>

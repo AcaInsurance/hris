@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/groupTop"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_home"
+            android:title="Home"
+            />
+        <item
+            android:id="@+id/nav_absensi"
+            android:icon="@drawable/ic_assessment"
+            android:title="History Absensi" />
+        <item
+            android:id="@+id/nav_cuti"
+            android:icon="@drawable/ic_assignment"
+            android:title="History Cuti" />
+
+        <item
+            android:id="@+id/nav_absensi_cancellation"
+            android:icon="@drawable/ic_assessment_cancel"
+            android:title="History Absensi Cancellation" />
+        <item
+            android:id="@+id/nav_cuti_cancellation"
+            android:icon="@drawable/ic_assignment_cancel"
+            android:title="History Cuti Cancellation" />
+
+        <item
+            android:id="@+id/nav_view"
+            android:icon="@drawable/ic_chrome_reader_mode"
+            android:title="Absensi View" />
+    </group>
+
+
+    <group
+        android:id="@+id/groupMiddle"
+        >
+        <item android:id="@+id/nav_approval"
+            android:title="Approval"
+            android:icon="@drawable/ic_thumbs_up_down"
+            />
+
+        <item
+            android:id="@+id/nav_approval_form"
+            android:title="Absensi Approval"
+            />
+
+        <item
+            android:id="@+id/nav_approval_cuti"
+            android:title="Cuti Approval" />
+
+        <item
+            android:id="@+id/nav_approval_absensi_cancel"
+            android:title="Absensi Cancellation Approval" />
+        <item
+            android:id="@+id/nav_approval_cuti_cancel"
+            android:title="Cuti Cancellation Approval" />
+
+
+    </group>
+
+    <group
+        android:id="@+id/groupApproval">
+
+        <item
+            android:id="@+id/nav_change_role"
+            android:icon="@drawable/ic_person"
+            android:title="Change Role" />
+    </group>
+
+
+    <group
+        android:id="@+id/groupBottom">
+
+        <item
+            android:id="@+id/nav_sign_out"
+            android:icon="@drawable/ic_power_settings_new"
+            android:title="Sign Out" />
+    </group>
+
+
+
+</menu>

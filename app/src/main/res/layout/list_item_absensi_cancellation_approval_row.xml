@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/spacing_small"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="false"
+    android:foreground="?attr/selectableItemBackground"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:id="@+id/viewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_normal">
+
+
+            <TextView
+                android:id="@+id/txtNoTransaksi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Transaksi"
+                android:paddingTop="@dimen/spacing_small"
+
+                />
+
+            <TextView android:id="@+id/txtNamaKaryawan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:text="Nama"
+                android:layout_below="@+id/txtNoTransaksi"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/colorAccent"
+                />
+
+
+            <TextView android:id="@+id/txtTipeFormulir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_small"
+
+                android:text="Tipe Formulir"
+                android:layout_below="@+id/txtNamaKaryawan"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/colorAccent"
+                />
+
+
+            <LinearLayout android:id="@+id/viewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginLeft="@dimen/spacing_small"
+                android:orientation="horizontal"
+                android:layout_below="@+id/txtTipeFormulir"
+                >
+
+                <TextView  android:id="@+id/txtDateFrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01/01/2015"
+                    android:textSize="@dimen/text_size_small"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" - "
+                    android:textSize="@dimen/text_size_small"
+                    />
+
+
+                <TextView android:id="@+id/txtDateTo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01/02/2015"
+                    android:textSize="@dimen/text_size_small"
+                    />
+            </LinearLayout>
+
+
+            <TextView  android:id="@+id/txtTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewDate"
+                android:layout_marginLeft="@dimen/spacing_small"
+                android:textSize="@dimen/text_size_small"
+                />
+
+
+            <TextView android:id="@+id/txtAlasan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:text="Alasan"
+                android:layout_below="@+id/txtTime"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/colorAccent"
+                />
+
+
+            <TextView android:id="@+id/txtTanggalTranskasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_small"
+                android:text="01/01/2015"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/txtNoTransaksi"
+                />
+
+
+            <RelativeLayout android:id="@+id/viewIcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtAlasan"
+                android:layout_margin="@dimen/spacing_small"
+                >
+
+                <ImageView android:id="@+id/imgReject"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:background="@drawable/ring_view_red"
+                    android:src="@drawable/ic_close"
+                    android:tint="@color/material_red"
+                    android:layout_alignParentLeft="true"
+                    />
+                <ImageView android:id="@+id/imgApproved"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:tint="@color/material_green"
+                    android:src="@drawable/ic_checklist"
+                    android:background="@drawable/ring_view_green"
+                    android:layout_alignParentRight="true"
+                    />
+
+
+                <ImageView android:id="@+id/imgRejectReviewed"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:background="@drawable/circle_view_red"
+                    android:src="@drawable/ic_close"
+                    android:tint="@color/mdtp_white"
+                    android:layout_alignParentLeft="true"
+                    android:visibility="gone"
+                    />
+                <ImageView android:id="@+id/imgApprovedReviewed"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:tint="@color/mdtp_white"
+                    android:src="@drawable/ic_checklist"
+                    android:background="@drawable/circle_view_green"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
+
+
+
+            <EditText
+                android:id="@+id/txtRejectRemark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alasan Reject"
+                android:textColorHint="@color/colorError"
+                android:textColor="@color/colorError"
+                android:paddingTop="@dimen/spacing_small"
+                android:textSize="@dimen/text_size_small"
+                android:layout_below="@id/viewIcon"
+                android:layout_alignLeft="@id/viewIcon"
+                android:visibility="gone"
+                android:editable="false"
+                />
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,1518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <string-array name="DoSaveSysAuditLog_post">
+        <item>LogDateTime</item>
+        <item>MenuId</item>
+        <item>ActionType</item>
+        <item>TableName</item>
+        <item>PrimaryKeyData</item>
+        <item>LogData</item>
+        <item>UserId</item>
+        <item>HostName</item>
+    </string-array>
+
+
+    <string-array name="ValidateLoginUser_post">
+        <item>userID</item>
+        <item>userPass</item>
+    </string-array>
+
+    <string-array name="ValidateLoginUser_get">
+        <item>EmpCode</item>
+    </string-array>
+
+
+    <string-array name="GetUserData_post">
+        <item>IDKaryawan</item>
+    </string-array>
+
+    <string-array name="GetUserData_get">
+        <item>IdKary</item>
+        <item>NIK</item>
+        <item>StatusKaryawan</item>
+        <item>PeriodeAwal</item>
+        <item>PeriodeAkhir</item>
+        <item>NamaCabang</item>
+        <item>NamaJabatan</item>
+        <item>NamaRangking</item>
+        <item>JobDesk</item>
+        <item>NamaKaryawan</item>
+        <item>NamaPanggil</item>
+        <item>JenisKelamin</item>
+        <item>KdGender</item>
+        <item>TglLahir</item>
+        <item>TempatLahir</item>
+        <item>Kewarganegaraan</item>
+        <item>Telp1</item>
+        <item>Telp2</item>
+        <item>KTP</item>
+        <item>Agama</item>
+        <item>BpjsKetenagakerjaan</item>
+        <item>BpjsKesehatan</item>
+        <item>NoDPLP</item>
+        <item>NoNPWP</item>
+        <item>StatusPernikahan</item>
+        <item>KodeLevel</item>
+        <item>KodeCabang</item>
+        <item>KdTpKerja</item>
+        <item>KdRanking</item>
+        <item>SisaCuti</item>
+        <item>IsAllowCutiMin</item>
+        <item>IsAllowBatasForm</item>
+        <item>IsApprovalKhusus</item>
+    </string-array>
+
+    <string-array name="GetTelatMangkirUser_post">
+        <item>IDKaryawan</item>
+        <item>IsTahunan</item>
+    </string-array>
+
+    <string-array name="GetTelatMangkirUser_get">
+        <item>telatHari</item>
+        <item>telatMenit</item>
+        <item>mangkirHari</item>
+        <item>bulan</item>
+    </string-array>
+
+
+    <string-array name="GetAbsensiFormTempDet_post"></string-array>
+
+    <string-array name="GetAbsensiFormTempDet_get">
+        <item>KodeKomponen</item>
+        <item>KodeForm</item>
+        <item>Caption</item>
+    </string-array>
+
+    <string-array name="GetAbsensiFormTempHead_post"></string-array>
+
+    <string-array name="GetAbsensiFormTempHead_get">
+        <item>KodeForm</item>
+        <item>GrpFormAbsensi</item>
+        <item>NamaForm</item>
+        <item>MaxHari</item>
+        <item>JamMin</item>
+        <item>JamMax</item>
+        <item>IsAttachMan</item>
+        <item>IsApprovalKhusus</item>
+        <item>IsPassingToday</item>
+        <item>IsTelat</item>
+        <item>Keterangan</item>
+        <item>KetWidth</item>
+        <item>KetHeight</item>
+    </string-array>
+
+
+    <string-array name="GetHeadKodeLevel_post">
+        <item>IdKaryawan</item>
+        <item>KodeLevel</item>
+    </string-array>
+
+    <string-array name="GetHeadKodeLevel_get">
+        <item>HeadKodeLevel</item>
+        <item>IdKary</item>
+        <item>FullName</item>
+    </string-array>
+
+
+
+    <string-array name="GetStandardFieldNameForm_post"></string-array>
+
+    <string-array name="GetStandardFieldNameForm_get">
+        <item>FieldCode</item>
+        <item>FieldCodeDt</item>
+        <item>FieldNameDt</item>
+        <item>Value</item>
+        <item>Description</item>
+    </string-array>
+
+    <string-array name="DoSaveAbsensiForm_sysAuditLog">
+        <item>NoTransaksi</item>
+        <item>TanggalTransaksi</item>
+        <item>KodeTransaksi</item>
+        <item>KdTpFormulir</item>
+        <item>DateFrom</item>
+        <item>DateTo</item>
+        <item>TimeFrom</item>
+        <item>TimeTo</item>
+        <item>Alasan</item>
+        <item>KodeLevelKary</item>
+        <item>KodeCabang</item>
+        <item>KodeRangking</item>
+        <item>KdTpKerja</item>
+        <item>IdKary</item>
+        <item>Approver1</item>
+        <item>Approver2</item>
+        <item>Approver3</item>
+        <item>Approver4</item>
+        <item>Approver5</item>
+        <item>ReviewBy</item>
+        <item>ReviewDate</item>
+        <item>KodeLevelReviewer</item>
+        <item>KodeShift</item>
+        <item>IsCancelled</item>
+        <item>IsApproved</item>
+        <item>IsRejected</item>
+        <item>HRDReviewBy</item>
+        <item>HRDReviewDate</item>
+        <item>IsHRDApproved</item>
+        <item>IsHRDRejected</item>
+        <item>IsAppMobile</item>
+        <item>IsInsertAbsensiView</item>
+        <item>ImageBerkas</item>
+        <item>AlasanReject</item>
+        <item>IsEmailSent</item>
+        <item>EmailException</item>
+        <item>CreateBy</item>
+        <item>CreateDate</item>
+        <item>ModifyBy</item>
+        <item>ModifyDate</item>
+        <item>IsActive</item>
+    </string-array>
+
+    <string-array name="DoSaveAbsensiForm_post">
+        <item>UserId</item>
+        <item>NoTransaksi</item>
+        <item>TanggalTransaksi</item>
+        <item>KodeTransaksi</item>
+        <item>KdTpFormulir</item>
+        <item>DateFrom</item>
+        <item>DateTo</item>
+        <item>TimeFrom</item>
+        <item>TimeTo</item>
+        <item>Alasan</item>
+        <item>KodeLevelKary</item>
+        <item>KodeCabang</item>
+        <item>KodeRangking</item>
+        <item>KdTpKerja</item>
+        <item>IdKary</item>
+        <item>Approver1</item>
+        <item>Approver2</item>
+        <item>Approver3</item>
+        <item>Approver4</item>
+        <item>Approver5</item>
+        <item>ReviewBy</item>
+        <item>ReviewDate</item>
+        <item>KodeLevelReviewer</item>
+        <item>KodeShift</item>
+        <item>IsCancelled</item>
+        <item>IsApproved</item>
+        <item>IsRejected</item>
+        <item>HRDReviewBy</item>
+        <item>HRDReviewDate</item>
+        <item>IsHRDApproved</item>
+        <item>IsHRDRejected</item>
+        <item>IsAppMobile</item>
+        <item>IsInsertAbsensiView</item>
+        <item>ImageBerkas</item>
+        <item>AlasanReject</item>
+        <item>IsEmailSent</item>
+        <item>EmailException</item>
+        <item>CreateBy</item>
+        <item>CreateDate</item>
+        <item>ModifyBy</item>
+        <item>ModifyDate</item>
+        <item>IsActive</item>
+
+        <item>sLogDateTime</item>
+        <item>sMenuId</item>
+        <item>sActionType</item>
+        <item>sTableName</item>
+        <item>sPrimaryKeyData</item>
+        <item>sLogData</item>
+        <item>sUserId</item>
+        <item>sHostName</item>
+    </string-array>
+
+    <string-array name="DoSaveAbsensiForm_get">
+        <item>DoSaveAbsensiFormResult</item>
+    </string-array>
+
+
+    <string-array name="DoUpdateAbsensiForm_sysAuditLog">
+        <item>NoTransaksi</item>
+        <item>TanggalTransaksi</item>
+        <item>KodeTransaksi</item>
+        <item>KdTpFormulir</item>
+        <item>DateFrom</item>
+        <item>DateTo</item>
+        <item>TimeFrom</item>
+        <item>TimeTo</item>
+        <item>Alasan</item>
+        <item>KodeLevelKary</item>
+        <item>KodeCabang</item>
+        <item>KodeRangking</item>
+        <item>KdTpKerja</item>
+        <item>IdKary</item>
+        <item>Approver1</item>
+        <item>Approver2</item>
+        <item>Approver3</item>
+        <item>Approver4</item>
+        <item>Approver5</item>
+        <item>ReviewBy</item>
+        <item>ReviewDate</item>
+        <item>KodeLevelReviewer</item>
+        <item>KodeShift</item>
+        <item>IsCancelled</item>
+        <item>IsApproved</item>
+        <item>IsRejected</item>
+        <item>HRDReviewBy</item>
+        <item>HRDReviewDate</item>
+        <item>IsHRDApproved</item>
+        <item>IsHRDRejected</item>
+        <item>IsAppMobile</item>
+        <item>IsInsertAbsensiView</item>
+        <item>ImageBerkas</item>
+        <item>AlasanReject</item>
+        <item>IsEmailSent</item>
+        <item>EmailException</item>
+        <item>CreateBy</item>
+        <item>CreateDate</item>
+        <item>ModifyBy</item>
+        <item>ModifyDate</item>
+        <item>IsActive</item>
+    </string-array>
+
+
+    <string-array name="DoUpdateAbsensiForm_post">
+        <item>UserId</item>
+        <item>NoTransaksi</item>
+        <item>TanggalTransaksi</item>
+        <item>KodeTransaksi</item>
+        <item>KdTpFormulir</item>
+        <item>DateFrom</item>
+        <item>DateTo</item>
+        <item>TimeFrom</item>
+        <item>TimeTo</item>
+        <item>Alasan</item>
+        <item>KodeLevelKary</item>
+        <item>KodeCabang</item>
+        <item>KodeRangking</item>
+        <item>KdTpKerja</item>
+        <item>IdKary</item>
+        <item>Approver1</item>
+        <item>Approver2</item>
+        <item>Approver3</item>
+        <item>Approver4</item>
+        <item>Approver5</item>
+        <item>ReviewBy</item>
+        <item>ReviewDate</item>
+        <item>KodeLevelReviewer</item>
+        <item>KodeShift</item>
+        <item>IsCancelled</item>
+        <item>IsApproved</item>
+        <item>IsRejected</item>
+        <item>HRDReviewBy</item>
+        <item>HRDReviewDate</item>
+        <item>IsHRDApproved</item>
+        <item>IsHRDRejected</item>
+        <item>IsAppMobile</item>
+        <item>IsInsertAbsensiView</item>
+        <item>ImageBerkas</item>
+        <item>AlasanReject</item>
+        <item>IsEmailSent</item>
+        <item>EmailException</item>
+        <item>CreateBy</item>
+        <item>CreateDate</item>
+        <item>ModifyBy</item>
+        <item>ModifyDate</item>
+        <item>IsActive</item>
+
+        <item>sLogDateTime</item>
+        <item>sMenuId</item>
+        <item>sActionType</item>
+        <item>sTableName</item>
+        <item>sPrimaryKeyData</item>
+        <item>sLogData</item>
+        <item>sUserId</item>
+        <item>sHostName</item>
+    </string-array>
+
+    <string-array name="DoUpdateAbsensiForm_get">
+        <item>DoUpdateAbsensiFormResult</item>
+    </string-array>
+
+
+
+    <string-array name="DoDeleteAbsensiForm_post">
+        <item>NoTransaksi</item>
+        <item>ModifyBy</item>
+        <item>ModifyDate</item>
+    </string-array>
+
+    <string-array name="DoDeleteAbsensiForm_get">
+        <item>DoDeleteAbsensiFormResult</item>
+    </string-array>
+
+    <string-array name="GetSetVar_post"></string-array>
+
+    <string-array name="GetSetVar_get">
+        <item>ParameterCode</item>
+        <item>ParameterName</item>
+        <item>Value</item>
+    </string-array>
+
+    <string-array name="GetAbsensiViewSummaryPeriod_post"></string-array>
+
+    <string-array name="GetAbsensiViewSummaryPeriod_get">
+        <item>Tahun</item>
+        <item>Bulan</item>
+    </string-array>
+
+
+    <string-array name="LoadAbsensiFormList_post">
+        <item>IdKary</item>
+        <item>Limit</item>
+        <item>Offset</item>
+    </string-array>
+
+    <string-array name="LoadAbsensiFormList_get">
+         <item>NoTransaksi</item>
+         <item>TanggalTransaksi</item>
+         <item>NamaKaryawan</item>
+         <item>NamaForm</item>
+         <item>IsApproved</item>
+         <item>IsRejected</item>
+         <item>IsCancelled</item>
+         <item>IsHRDApproved</item>
+         <item>IsHRDRejected</item>
+         <item>AlasanReject</item>
+         <item>IsActive</item>
+         <item>RowNum</item>
+    </string-array>
+
+
+    <string-array name="LoadAbsensiFormListHead_post">
+        <item>KodeLevel</item>
+        <item>Limit</item>
+        <item>Offset</item>
+    </string-array>
+
+    <string-array name="LoadAbsensiFormListHead_get">
+        <item>NoTransaksi</item>
+        <item>TanggalTransaksi</item>
+        <item>NamaKaryawan</item>
+        <item>NamaForm</item>
+        <item>IsApproved</item>
+        <item>IsRejected</item>
+        <item>IsCancelled</item>
+        <item>IsHRDApproved</item>
+        <item>IsHRDRejected</item>
+        <item>AlasanReject</item>
+        <item>IsActive</item>
+        <item>RowNum</item>
+    </string-array>
+
+    <string-array name="LoadListAbsensiForApproval_post">
+        <item>KodeLevel</item>
+        <item>Limit</item>
+        <item>Offset</item>
+    </string-array>
+
+    <string-array name="LoadListAbsensiForApproval_get">
+        <item>NoTransaksi</item>
+        <item>TanggalTransaksi</item>
+        <item>NamaLengkap</item>
+        <item>NamaForm</item>
+        <item>DateFrom</item>
+        <item>DateTo</item>
+        <item>TimeFrom</item>
+        <item>TimeTo</item>
+        <item>Alasan</item>
+        <item>RowNum</item>
+    </string-array>
+
+    <string-array name="LoadAbsensiForm_post">
+        <item>NoTransaksi</item>
+    </string-array>
+
+    <string-array name="LoadAbsensiForm_get">
+        <item>NamaApprover1</item>
+        <item>NoTransaksi</item>
+        <item>TanggalTransaksi</item>
+        <item>KodeTransaksi</item>
+        <item>KdTpFormulir</item>
+        <item>DateFrom</item>
+        <item>DateTo</item>
+        <item>TimeFrom</item>
+        <item>TimeTo</item>
+        <item>Alasan</item>
+        <item>KodeLevelKary</item>
+        <item>KodeCabang</item>
+        <item>KodeRangking</item>
+        <item>KdTpKerja</item>
+        <item>IdKary</item>
+        <item>Approver1</item>
+        <item>Approver2</item>
+        <item>Approver3</item>
+        <item>Approver4</item>
+        <item>Approver5</item>
+        <item>ReviewBy</item>
+        <item>ReviewDate</item>
+        <item>KodeLevelReviewer</item>
+        <item>KodeShift</item>
+        <item>IsCancelled</item>
+        <item>IsApproved</item>
+        <item>IsRejected</item>
+        <item>HRDReviewBy</item>
+        <item>HRDReviewDate</item>
+        <item>IsHRDApproved</item>
+        <item>IsHRDRejected</item>
+        <item>IsAppMobile</item>
+        <item>IsInsertAbsensiView</item>
+        <item>ImageBerkas</item>
+        <item>AlasanReject</item>
+        <item>IsEmailSent</item>
+        <item>EmailException</item>
+        <item>CreateBy</item>
+        <item>CreateDate</item>
+        <item>ModifyBy</item>
+        <item>ModifyDate</item>
+        <item>IsActive</item>
+    </string-array>
+
+
+    <string-array name="GetUserRole_post">
+        <item>userID</item>
+    </string-array>
+
+
+    <string-array name="GetUserRole_get">
+        <item>roleid</item>
+        <item>RoleDesc</item>
+
+    </string-array>
+
+    <string-array name="GetJabatan_post">
+        <item>IdKaryawan</item>
+    </string-array>
+
+
+    <string-array name="GetJabatan_get">
+        <item>KodeLevel</item>
+        <item>NamaJabatan</item>
+    </string-array>
+
+
+
+    <string-array name="DoApproveAbsensi_post">
+        <item>NoTransaksi</item>
+        <item>IdKaryawan</item>
+        <item>KodeLevel</item>
+        <item>UserId</item>
+        <item>IsApprove</item>
+        <item>AlasanReject</item>
+    </string-array>
+
+
+    <string-array name="DoApproveAbsensi_get">
+        <item>DoApproveAbsensiResult</item>
+    </string-array>
+
+
+
+    <string-array name="GetSisaCuti_post">
+        <item>IdKaryawan</item>
+    </string-array>
+
+
+    <string-array name="GetSisaCuti_get">
+        <item>SisaCuti</item>
+    </string-array>
+
+    <string-array name="GetMsCuti_post">
+        <item></item>
+    </string-array>
+
+
+    <string-array name="GetMsCuti_get">
+        <item>KodeCuti</item>
+        <item>NamaCuti</item>
+        <item>TipeCuti</item>
+        <item>Gender</item>
+        <item>JumlahHari</item>
+        <item>IsGaji</item>
+        <item>IsFix</item>
+        <item>IsPotongCuti</item>
+        <item>IsLihatCalendar</item>
+        <item>IsSetengahHari</item>
+        <item>IsTelat</item>
+        <item>JamMasuk</item>
+        <item>Keterangan</item>
+        <item>KetWidth</item>
+        <item>KetHeight</item>
+        <item>CreateBy</item>
+        <item>CreateDate</item>
+        <item>ModifyBy</item>
+        <item>ModifyDate</item>
+        <item>IsActive</item>
+    </string-array>
+
+
+    <string-array name="DoSaveAbsensiCuti_sysAuditLog">
+        <item>NoTransaksi</item>
+        <item>KodeTransaksi</item>
+        <item>TanggalTransaksi</item>
+        <item>TipeCuti</item>
+        <item>CutiFrom</item>
+        <item>CutiTo</item>
+        <item>CurrentCuti</item>
+        <item>LatestCuti</item>
+        <item>IsCancel</item>
+        <item>JmlhPtgCuti</item>
+        <item>Alasan</item>
+        <item>KdLvlKary</item>
+        <item>KodeCabang</item>
+        <item>KodeRangking</item>
+        <item>KdTpKerja</item>
+        <item>IdKary</item>
+        <item>L1KdLvl</item>
+        <item>L2KdLvl</item>
+        <item>L3KdLvl</item>
+        <item>L4KdLvl</item>
+        <item>L5KdLvl</item>
+        <item>IsAktifL1</item>
+        <item>IsAktifL2</item>
+        <item>IsAktifL3</item>
+        <item>IsAktifL4</item>
+        <item>IsAktifL5</item>
+        <item>IsAppHead</item>
+        <item>IdAppHead</item>
+        <item>TglAppHEad</item>
+        <item>IsRejectHead</item>
+        <item>IsAppHRD</item>
+        <item>IdAppHRD</item>
+        <item>TglAppHRD</item>
+        <item>IsRejectHRD</item>
+        <item>IsAppMobile</item>
+        <item>AlasanReject</item>
+        <item>IsEmailSent</item>
+        <item>EmailException</item>
+        <item>CreateBy</item>
+        <item>CreateDate</item>
+        <item>ModifyBy</item>
+        <item>ModifyDate</item>
+        <item>IsActive</item>
+    </string-array>
+
+
+
+    <string-array name="DoSaveAbsensiCuti_post">
+        <item>UserId</item>
+        <item>NoTransaksi</item>
+        <item>KodeTransaksi</item>
+        <item>TanggalTransaksi</item>
+        <item>TipeCuti</item>
+        <item>CutiFrom</item>
+        <item>CutiTo</item>
+        <item>CurrentCuti</item>
+        <item>LatestCuti</item>
+        <item>IsCancel</item>
+        <item>JmlhPtgCuti</item>
+        <item>Alasan</item>
+        <item>KdLvlKary</item>
+        <item>KodeCabang</item>
+        <item>KodeRangking</item>
+        <item>KdTpKerja</item>
+        <item>IdKary</item>
+        <item>L1KdLvl</item>
+        <item>L2KdLvl</item>
+        <item>L3KdLvl</item>
+        <item>L4KdLvl</item>
+        <item>L5KdLvl</item>
+        <item>IsAktifL1</item>
+        <item>IsAktifL2</item>
+        <item>IsAktifL3</item>
+        <item>IsAktifL4</item>
+        <item>IsAktifL5</item>
+        <item>IsAppHead</item>
+        <item>IdAppHead</item>
+        <item>TglAppHEad</item>
+        <item>IsRejectHead</item>
+        <item>IsAppHRD</item>
+        <item>IdAppHRD</item>
+        <item>TglAppHRD</item>
+        <item>IsRejectHRD</item>
+        <item>IsAppMobile</item>
+        <item>AlasanReject</item>
+        <item>IsEmailSent</item>
+        <item>EmailException</item>
+        <item>CreateBy</item>
+        <item>CreateDate</item>
+        <item>ModifyBy</item>
+        <item>ModifyDate</item>
+        <item>IsActive</item>
+        <item>sLogDateTime</item>
+        <item>sMenuId</item>
+        <item>sActionType</item>
+        <item>sTableName</item>
+        <item>sPrimaryKeyData</item>
+        <item>sLogData</item>
+        <item>sUserId</item>
+        <item>sHostName</item>
+    </string-array>
+
+
+    <string-array name="DoSaveAbsensiCuti_get">
+        <item>DoSaveAbsensiCutiResult</item>
+    </string-array>
+
+    <string-array name="DoUpdateAbsensiCuti_post">
+        <item>UserId</item>
+        <item>NoTransaksi</item>
+        <item>KodeTransaksi</item>
+        <item>TanggalTransaksi</item>
+        <item>TipeCuti</item>
+        <item>CutiFrom</item>
+        <item>CutiTo</item>
+        <item>CurrentCuti</item>
+        <item>LatestCuti</item>
+        <item>IsCancel</item>
+        <item>JmlhPtgCuti</item>
+        <item>Alasan</item>
+        <item>KdLvlKary</item>
+        <item>KodeCabang</item>
+        <item>KodeRangking</item>
+        <item>KdTpKerja</item>
+        <item>IdKary</item>
+        <item>L1KdLvl</item>
+        <item>L2KdLvl</item>
+        <item>L3KdLvl</item>
+        <item>L4KdLvl</item>
+        <item>L5KdLvl</item>
+        <item>IsAktifL1</item>
+        <item>IsAktifL2</item>
+        <item>IsAktifL3</item>
+        <item>IsAktifL4</item>
+        <item>IsAktifL5</item>
+        <item>IsAppHead</item>
+        <item>IdAppHead</item>
+        <item>TglAppHEad</item>
+        <item>IsRejectHead</item>
+        <item>IsAppHRD</item>
+        <item>IdAppHRD</item>
+        <item>TglAppHRD</item>
+        <item>IsRejectHRD</item>
+        <item>IsAppMobile</item>
+        <item>AlasanReject</item>
+        <item>IsEmailSent</item>
+        <item>EmailException</item>
+        <item>CreateBy</item>
+        <item>CreateDate</item>
+        <item>ModifyBy</item>
+        <item>ModifyDate</item>
+        <item>IsActive</item>
+        <item>sLogDateTime</item>
+        <item>sMenuId</item>
+        <item>sActionType</item>
+        <item>sTableName</item>
+        <item>sPrimaryKeyData</item>
+        <item>sLogData</item>
+        <item>sUserId</item>
+        <item>sHostName</item>
+    </string-array>
+
+
+    <string-array name="DoUpdateAbsensiCuti_get">
+        <item>DoUpdateAbsensiCutiResult</item>
+    </string-array>
+
+    <string-array name="DoDeleteAbsensiCuti_post">
+        <item>NoTransaksi</item>
+        <item>ModifyBy</item>
+        <item>ModifyDate</item>
+    </string-array>
+
+
+    <string-array name="DoDeleteAbsensiCuti_get">
+        <item>DoDeleteAbsensiCutiResult</item>
+    </string-array>
+
+
+    <string-array name="LoadAbsensiCuti_post">
+        <item>NoTransaksi</item>
+    </string-array>
+
+
+    <string-array name="LoadAbsensiCuti_get">
+        <item>NamaApprover1</item>
+        <item>SisacCutiOutstanding</item>
+        <item>NoTransaksi</item>
+        <item>KodeTransaksi</item>
+        <item>TanggalTransaksi</item>
+        <item>UserId</item>
+        <item>TipeCuti</item>
+        <item>CutiFrom</item>
+        <item>CutiTo</item>
+        <item>CurrentCuti</item>
+        <item>LatestCuti</item>
+        <item>IsCancel</item>
+        <item>JmlhPtgCuti</item>
+        <item>Alasan</item>
+        <item>KdLvlKary</item>
+        <item>KodeCabang</item>
+        <item>KodeRangking</item>
+        <item>KdTpKerja</item>
+        <item>IdKary</item>
+        <item>L1KdLvl</item>
+        <item>L2KdLvl</item>
+        <item>L3KdLvl</item>
+        <item>L4KdLvl</item>
+        <item>L5KdLvl</item>
+        <item>IsAktifL1</item>
+        <item>IsAktifL2</item>
+        <item>IsAktifL3</item>
+        <item>IsAktifL4</item>
+        <item>IsAktifL5</item>
+        <item>IsAppHead</item>
+        <item>IdAppHead</item>
+        <item>TglAppHEad</item>
+        <item>IsRejectHead</item>
+        <item>IsAppHRD</item>
+        <item>IdAppHRD</item>
+        <item>TglAppHRD</item>
+        <item>IsRejectHRD</item>
+        <item>IsAppMobile</item>
+        <item>AlasanReject</item>
+        <item>IsEmailSent</item>
+        <item>EmailException</item>
+        <item>CreateBy</item>
+        <item>CreateDate</item>
+        <item>ModifyBy</item>
+        <item>ModifyDate</item>
+        <item>IsActive</item>
+    </string-array>
+
+    <string-array name="LoadAbsensiCutiListHead_post">
+        <item>KodeLevel</item>
+        <item>Limit</item>
+        <item>Offset</item>
+    </string-array>
+
+
+    <string-array name="LoadAbsensiCutiListHead_get">
+        <item>NoTransaksi</item>
+        <item>TanggalTransaksi</item>
+        <item>NamaKaryawan</item>
+        <item>NamaCuti</item>
+        <item>IsAppHead</item>
+        <item>IsRejectHead</item>
+        <item>IsCancel</item>
+        <item>IsAppHRD</item>
+        <item>IsRejectHRD</item>
+        <item>AlasanReject</item>
+        <item>IsActive</item>
+        <item>RowNum</item>
+    </string-array>
+
+    <string-array name="LoadAbsensiCutiList_post">
+        <item>IdKaryawan</item>
+        <item>Limit</item>
+        <item>Offset</item>
+    </string-array>
+
+
+    <string-array name="LoadAbsensiCutiList_get">
+        <item>NoTransaksi</item>
+        <item>TanggalTransaksi</item>
+        <item>NamaKaryawan</item>
+        <item>NamaCuti</item>
+        <item>IsAppHead</item>
+        <item>IsRejectHead</item>
+        <item>IsCancel</item>
+        <item>IsAppHRD</item>
+        <item>IsRejectHRD</item>
+        <item>AlasanReject</item>
+        <item>IsActive</item>
+        <item>RowNum</item>
+    </string-array>
+
+    <string-array name="LoadListCutiForApproval_post">
+        <item>KodeLevel</item>
+        <item>Limit</item>
+        <item>Offset</item>
+    </string-array>
+
+
+    <string-array name="LoadListCutiForApproval_get">
+        <item>NoTransaksi</item>
+        <item>TanggalTransaksi</item>
+        <item>NamaLengkap</item>
+        <item>NamaForm</item>
+        <item>CutiFrom</item>
+        <item>CutiTo</item>
+        <item>Alasan</item>
+        <item>RowNum</item>
+    </string-array>
+
+    <string-array name="DoApproveCuti_post">
+        <item>NoTransaksi</item>
+        <item>IdKaryawan</item>
+        <item>KodeLevel</item>
+        <item>UserId</item>
+        <item>IsApprove</item>
+        <item>AlasanReject</item>
+    </string-array>
+
+
+    <string-array name="DoApproveCuti_get">
+        <item>DoApproveCutiResult</item>
+    </string-array>
+
+    <string-array name="GetPotongCuti_post">
+        <item>CutiFrom</item>
+        <item>CutiTo</item>
+    </string-array>
+
+
+    <string-array name="GetPotongCuti_get">
+        <item>PotongCuti</item>
+    </string-array>
+
+
+    <!--cuti cancellation -->
+
+
+    <string-array name="DoSaveAbsensiCutiCancellation_sysAuditLog">
+        <item>NoTransaksi</item>
+        <item>KodeTransaksi</item>
+        <item>Tanggal</item>
+        <item>NoTransaksiCuti</item>
+        <item>AlasanBatal</item>
+        <item>IsAppHead</item>
+        <item>IsRejectHead</item>
+        <item>TglAppHead</item>
+        <item>IdAppHead</item>
+        <item>IsAppHRD</item>
+        <item>IsRejectHRD</item>
+        <item>TglAppHRD</item>
+        <item>IdAppHRD</item>
+        <item>IsAppMobile</item>
+        <item>AlasanReject</item>
+        <item>IsEmailSent</item>
+        <item>EmailException</item>
+        <item>CreateBy</item>
+        <item>CreateDate</item>
+        <item>ModifyBy</item>
+        <item>ModifyDate</item>
+        <item>IsActive</item>
+    </string-array>
+
+
+
+    <string-array name="DoSaveAbsensiCutiCancellation_post">
+        <item>UserId</item>
+        <item>NoTransaksi</item>
+        <item>KodeTransaksi</item>
+        <item>Tanggal</item>
+        <item>NoTransaksiCuti</item>
+        <item>AlasanBatal</item>
+        <item>IsAppHead</item>
+        <item>IsRejectHead</item>
+        <item>TglAppHead</item>
+        <item>IdAppHead</item>
+        <item>IsAppHRD</item>
+        <item>IsRejectHRD</item>
+        <item>TglAppHRD</item>
+        <item>IdAppHRD</item>
+        <item>IsAppMobile</item>
+        <item>AlasanReject</item>
+        <item>IsEmailSent</item>
+        <item>EmailException</item>
+        <item>CreateBy</item>
+        <item>CreateDate</item>
+        <item>ModifyBy</item>
+        <item>ModifyDate</item>
+        <item>IsActive</item>
+        <item>sLogDateTime</item>
+        <item>sMenuId</item>
+        <item>sActionType</item>
+        <item>sTableName</item>
+        <item>sPrimaryKeyData</item>
+        <item>sLogData</item>
+        <item>sUserId</item>
+        <item>sHostName</item>
+    </string-array>
+
+
+    <string-array name="DoSaveAbsensiCutiCancellation_get">
+        <item>DoSaveAbsensiCutiCancellationResult</item>
+    </string-array>
+
+    <string-array name="DoUpdateAbsensiCutiCancellation_post">
+        <item>UserId</item>
+        <item>NoTransaksi</item>
+        <item>KodeTransaksi</item>
+        <item>Tanggal</item>
+        <item>NoTransaksiCuti</item>
+        <item>AlasanBatal</item>
+        <item>IsAppHead</item>
+        <item>IsRejectHead</item>
+        <item>TglAppHead</item>
+        <item>IdAppHead</item>
+        <item>IsAppHRD</item>
+        <item>IsRejectHRD</item>
+        <item>TglAppHRD</item>
+        <item>IdAppHRD</item>
+        <item>IsAppMobile</item>
+        <item>AlasanReject</item>
+        <item>IsEmailSent</item>
+        <item>EmailException</item>
+        <item>CreateBy</item>
+        <item>CreateDate</item>
+        <item>ModifyBy</item>
+        <item>ModifyDate</item>
+        <item>IsActive</item>
+        <item>sLogDateTime</item>
+        <item>sMenuId</item>
+        <item>sActionType</item>
+        <item>sTableName</item>
+        <item>sPrimaryKeyData</item>
+        <item>sLogData</item>
+        <item>sUserId</item>
+        <item>sHostName</item>
+    </string-array>
+
+
+    <string-array name="DoUpdateAbsensiCutiCancellation_get">
+        <item>DoUpdateAbsensiCutiCancellationResult</item>
+    </string-array>
+
+    <string-array name="DoDeleteAbsensiCutiCancellation_post">
+        <item>NoTransaksi</item>
+        <item>ModifyBy</item>
+        <item>ModifyDate</item>
+    </string-array>
+
+
+    <string-array name="DoDeleteAbsensiCutiCancellation_get">
+        <item>DoDeleteAbsensiCutiCancellationResult</item>
+    </string-array>
+
+    <string-array name="LoadListAbsensiCutiForCancellation_post">
+        <item>IdKaryawan</item>
+        <item>UserId</item>
+    </string-array>
+
+
+    <string-array name="LoadListAbsensiCutiForCancellation_get">
+        <item>NoTransaksi</item>
+        <item>TanggalTransaksi</item>
+        <item>TipeCuti</item>
+        <item>JmlhPtgCuti</item>
+    </string-array>
+
+
+    <string-array name="LoadAbsensiCutiCancellation_post">
+        <item>NoTransaksi</item>
+    </string-array>
+
+
+    <string-array name="LoadAbsensiCutiCancellation_get">
+        <item>NoTransaksi</item>
+        <item>KodeTransaksi</item>
+        <item>Tanggal</item>
+        <item>UserId</item>
+        <item>NoTransaksiCuti</item>
+        <item>AlasanBatal</item>
+        <item>IsAppHead</item>
+        <item>IsRejectHead</item>
+        <item>TglAppHead</item>
+        <item>IdAppHead</item>
+        <item>IsAppHRD</item>
+        <item>IsRejectHRD</item>
+        <item>TglAppHRD</item>
+        <item>IdAppHRD</item>
+        <item>AlasanReject</item>
+        <item>IsAppMobile</item>
+        <item>IsEmailSent</item>
+        <item>EmailException</item>
+        <item>CreateBy</item>
+        <item>CreateDate</item>
+        <item>ModifyBy</item>
+        <item>ModifyDate</item>
+        <item>IsActive</item>
+    </string-array>
+
+    <string-array name="LoadListCutiCancellationForApproval_post">
+        <item>KodeLevel</item>
+        <item>Limit</item>
+        <item>Offset</item>
+    </string-array>
+
+
+    <string-array name="LoadListCutiCancellationForApproval_get">
+        <item>NoTransaksi</item>
+        <item>Tanggal</item>
+        <item>NamaKaryawan</item>
+        <item>NamaCuti</item>
+        <item>CutiFrom</item>
+        <item>CutiTo</item>
+        <item>AlasanBatal</item>
+        <item>IsAppHead</item>
+        <item>IsRejectHead</item>
+        <item>IsAppHRD</item>
+        <item>IsRejectHRD</item>
+        <item>AlasanReject</item>
+        <item>IsActive</item>
+        <item>RowNum</item>
+    </string-array>
+
+    <string-array name="LoadAbsensiCutiCancellationList_post">
+        <item>IdKaryawan</item>
+        <item>Limit</item>
+        <item>Offset</item>
+    </string-array>
+
+
+    <string-array name="LoadAbsensiCutiCancellationList_get">
+        <item>NoTransaksi</item>
+        <item>Tanggal</item>
+        <item>NoTransaksiCuti</item>
+        <item>NamaKaryawan</item>
+        <item>NamaForm</item>
+        <item>AlasanBatal</item>
+        <item>IsAppHead</item>
+        <item>IsRejectHead</item>
+        <item>IsAppHRD</item>
+        <item>IsRejectHRD</item>
+        <item>AlasanReject</item>
+        <item>IsActive</item>
+        <item>RowNum</item>
+    </string-array>
+
+    <string-array name="DoApproveCutiCancellation_post">
+        <item>NoTransaksi</item>
+        <item>IdKaryawan</item>
+        <item>KodeLevel</item>
+        <item>UserId</item>
+        <item>IsApprove</item>
+        <item>AlasanReject</item>
+    </string-array>
+
+
+    <string-array name="DoApproveCutiCancellation_get">
+        <item>DoApproveCutiCancellationResult</item>
+    </string-array>
+
+
+    <!--form cancellation-->
+
+
+    <string-array name="DoSaveAbsensiFormCancellation_sysAuditLog">
+        <item>NoCancel</item>
+        <item>TglCancel</item>
+        <item>KodeTransaksi</item>
+        <item>NoTransaksi</item>
+        <item>AlasanBatal</item>
+        <item>KodeLevelKary</item>
+        <item>ReviewBy</item>
+        <item>ReviewDate</item>
+        <item>IsApproved</item>
+        <item>IsRejected</item>
+        <item>HRDReviewBy</item>
+        <item>HRDReviewDate</item>
+        <item>IsHRDApproved</item>
+        <item>IsHRDRejected</item>
+        <item>IsAppMobile</item>
+        <item>AlasanReject</item>
+        <item>IsEmailSent</item>
+        <item>EmailException</item>
+        <item>CreateBy</item>
+        <item>CreateDate</item>
+        <item>ModifyBy</item>
+        <item>ModifyDate</item>
+        <item>IsActive</item>
+    </string-array>
+
+
+
+    <string-array name="DoSaveAbsensiFormCancellation_post">
+        <item>UserId</item>
+        <item>NoCancel</item>
+        <item>TglCancel</item>
+        <item>KodeTransaksi</item>
+        <item>NoTransaksi</item>
+        <item>AlasanBatal</item>
+        <item>KodeLevelKary</item>
+        <item>ReviewBy</item>
+        <item>ReviewDate</item>
+        <item>IsApproved</item>
+        <item>IsRejected</item>
+        <item>HRDReviewBy</item>
+        <item>HRDReviewDate</item>
+        <item>IsHRDApproved</item>
+        <item>IsHRDRejected</item>
+        <item>IsAppMobile</item>
+        <item>AlasanReject</item>
+        <item>IsEmailSent</item>
+        <item>EmailException</item>
+        <item>CreateBy</item>
+        <item>CreateDate</item>
+        <item>ModifyBy</item>
+        <item>ModifyDate</item>
+        <item>IsActive</item>
+        <item>sLogDateTime</item>
+        <item>sMenuId</item>
+        <item>sActionType</item>
+        <item>sTableName</item>
+        <item>sPrimaryKeyData</item>
+        <item>sLogData</item>
+        <item>sUserId</item>
+        <item>sHostName</item>
+    </string-array>
+
+
+    <string-array name="DoSaveAbsensiFormCancellation_get">
+        <item>DoSaveAbsensiFormCancellationResult</item>
+    </string-array>
+
+    <string-array name="DoUpdateAbsensiFormCancellation_post">
+        <item>UserId</item>
+        <item>NoCancel</item>
+        <item>NoTransaksi</item>
+        <item>TglCancel</item>
+        <item>KodeTransaksi</item>
+        <item>AlasanBatal</item>
+        <item>KodeLevelKary</item>
+        <item>ReviewBy</item>
+        <item>ReviewDate</item>
+        <item>IsApproved</item>
+        <item>IsRejected</item>
+        <item>HRDReviewBy</item>
+        <item>HRDReviewDate</item>
+        <item>IsHRDApproved</item>
+        <item>IsHRDRejected</item>
+        <item>IsAppMobile</item>
+        <item>AlasanReject</item>
+        <item>IsEmailSent</item>
+        <item>EmailException</item>
+        <item>CreateBy</item>
+        <item>CreateDate</item>
+        <item>ModifyBy</item>
+        <item>ModifyDate</item>
+        <item>IsActive</item>
+        <item>sLogDateTime</item>
+        <item>sMenuId</item>
+        <item>sActionType</item>
+        <item>sTableName</item>
+        <item>sPrimaryKeyData</item>
+        <item>sLogData</item>
+        <item>sUserId</item>
+        <item>sHostName</item>
+    </string-array>
+
+
+    <string-array name="DoUpdateAbsensiFormCancellation_get">
+        <item>DoUpdateAbsensiFormCancellationResult</item>
+    </string-array>
+
+    <string-array name="DoDeleteAbsensiFormCancellation_post">
+        <item>NoTransaksi</item>
+        <item>ModifyBy</item>
+        <item>ModifyDate</item>
+    </string-array>
+
+
+    <string-array name="DoDeleteAbsensiFormCancellation_get">
+        <item>DoDeleteAbsensiFormCancellationResult</item>
+    </string-array>
+
+    <string-array name="LoadListAbsensiFormForCancellation_post">
+        <item>IdKaryawan</item>
+    </string-array>
+
+
+    <string-array name="LoadListAbsensiFormForCancellation_get">
+        <item>NoTransaksi</item>
+        <item>TanggalTransaksi</item>
+        <item>Alasan</item>
+    </string-array>
+
+
+    <string-array name="loadAbsensiFormCancellation_post">
+        <item>NoTransaksi</item>
+    </string-array>
+
+
+    <string-array name="loadAbsensiFormCancellation_get">
+        <item>NoCancel</item>
+        <item>NoTransaksi</item>
+        <item>TglCancel</item>
+        <item>KodeTransaksi</item>
+        <item>AlasanBatal</item>
+        <item>KodeLevelKary</item>
+        <item>ReviewBy</item>
+        <item>ReviewDate</item>
+        <item>IsApproved</item>
+        <item>IsRejected</item>
+        <item>HRDReviewBy</item>
+        <item>HRDReviewDate</item>
+        <item>IsHRDApproved</item>
+        <item>IsHRDRejected</item>
+        <item>IsAppMobile</item>
+        <item>AlasanReject</item>
+        <item>IsEmailSent</item>
+        <item>EmailException</item>
+        <item>CreateBy</item>
+        <item>CreateDate</item>
+        <item>ModifyBy</item>
+        <item>ModifyDate</item>
+        <item>IsActive</item>
+    </string-array>
+
+    <string-array name="LoadListAbsensiCancellationForApproval_post">
+        <item>KodeLevel</item>
+        <item>Limit</item>
+        <item>Offset</item>
+    </string-array>
+
+
+    <string-array name="LoadListAbsensiCancellationForApproval_get">
+        <item>NoCancel</item>
+        <item>TglCancel</item>
+        <item>NamaKaryawan</item>
+        <item>NamaForm</item>
+        <item>DateFrom</item>
+        <item>DateTo</item>
+        <item>TimeFrom</item>
+        <item>TimeTo</item>
+        <item>AlasanBatal</item>
+        <item>IsApproved</item>
+        <item>IsRejected</item>
+        <item>IsHRDApproved</item>
+        <item>IsHRDRejected</item>
+        <item>AlasanReject</item>
+        <item>IsActive</item>
+        <item>RowNum</item>
+    </string-array>
+
+    <string-array name="LoadAbsensiFormCancellationList_post">
+        <item>IdKaryawan</item>
+        <item>Limit</item>
+        <item>Offset</item>
+    </string-array>
+
+
+    <string-array name="LoadAbsensiFormCancellationList_get">
+        <item>NoCancel</item>
+        <item>TglCancel</item>
+        <item>NoTransaksi</item>
+        <item>NamaKaryawan</item>
+        <item>NamaForm</item>
+        <item>IsApproved</item>
+        <item>IsRejected</item>
+        <item>IsHRDApproved</item>
+        <item>IsHRDRejected</item>
+        <item>AlasanReject</item>
+        <item>IsActive</item>
+        <item>RowNum</item>
+    </string-array>
+
+    <string-array name="DoApproveFormCancellation_post">
+        <item>NoTransaksi</item>
+        <item>IdKaryawan</item>
+        <item>KodeLevel</item>
+        <item>UserId</item>
+        <item>IsApprove</item>
+        <item>AlasanReject</item>
+    </string-array>
+
+
+    <string-array name="DoApproveFormCancellation_get">
+        <item>DoApproveFormCancellationResult</item>
+    </string-array>
+
+
+    <!--send email-->
+
+    <string-array name="DoSendEmailCreateAbsensi_post">
+        <item>IdKary</item>
+        <item>IdApprover</item>
+        <item>NoTransaksi</item>
+    </string-array>
+
+
+    <string-array name="DoSendEmailCreateAbsensi_get">
+        <item>DoSendEmailCreateAbsensiResult</item>
+    </string-array>
+
+
+    <string-array name="DoSendEmailCreateCuti_post">
+        <item>IdKary</item>
+        <item>IdApprover</item>
+        <item>NoTransaksi</item>
+    </string-array>
+
+
+    <string-array name="DoSendEmailCreateCuti_get">
+        <item>DoSendEmailCreateCutiResult</item>
+    </string-array>
+
+
+    <string-array name="DoSendEmailCreateCutiCancellation_post">
+        <item>IdKary</item>
+        <item>IdApprover</item>
+        <item>NoTransaksi</item>
+    </string-array>
+
+
+    <string-array name="DoSendEmailCreateCutiCancellation_get">
+        <item>DoSendEmailCreateCutiCancellationResult</item>
+    </string-array>
+
+
+
+    <string-array name="DoSendEmailCreateAbsensiCancellation_post">
+        <item>IdKary</item>
+        <item>IdApprover</item>
+        <item>NoTransaksi</item>
+    </string-array>
+
+
+    <string-array name="DoSendEmailCreateAbsensiCancellation_get">
+        <item>DoSendEmailCreateAbsensiCancellationResult</item>
+    </string-array>
+
+
+
+    <string-array name="DoSendEmailApproveCuti_post">
+        <item>NoTransaksi</item>
+    </string-array>
+
+
+    <string-array name="DoSendEmailApproveCuti_get">
+        <item>DoSendEmailApproveCutiResult</item>
+    </string-array>
+
+
+    <string-array name="DoSendEmailApproveCutiCancellation_post">
+        <item>NoTransaksi</item>
+    </string-array>
+
+
+    <string-array name="DoSendEmailApproveCutiCancellation_get">
+        <item>DoSendEmailApproveCutiCancellationResult</item>
+    </string-array>
+
+
+    <string-array name="DoSendEmailApproveAbsensi_post">
+        <item>NoTransaksi</item>
+    </string-array>
+
+
+    <string-array name="DoSendEmailApproveAbsensi_get">
+        <item>DoSendEmailApproveAbsensiResult</item>
+    </string-array>
+
+
+
+    <string-array name="DoSendEmailApproveAbsensiCancellation_post">
+        <item>NoTransaksi</item>
+    </string-array>
+
+
+    <string-array name="DoSendEmailApproveAbsensiCancellation_get">
+        <item>DoSendEmailApproveAbsensiCancellationResult</item>
+    </string-array>
+
+    <string-array name="DoSaveImage64_post">
+        <item>filename</item>
+        <item>picbyte</item>
+    </string-array>
+
+
+    <string-array name="DoSaveImage64_get">
+        <item>DoSaveImage64Result</item>
+    </string-array>
+
+    <string-array name="DoCekIrisan_post">
+        <item>TanggalMulai</item>
+        <item>TanggalBerakhir</item>
+        <item>JamMulai</item>
+        <item>JamSelesai</item>
+        <item>TableName</item>
+        <item>NoTransaksi</item>
+        <item>IdKaryawan</item>
+        <item>TipeForm</item>
+
+    </string-array>
+
+
+    <string-array name="DoCekIrisan_get">
+        <item>IRISAN</item>
+    </string-array>
+
+    <string-array name="GetListAbsensiView_post">
+         <item>IdKaryawan</item>
+         <item>Limit</item>
+         <item>Offset</item>
+    </string-array>
+
+
+    <string-array name="GetListAbsensiView_get">
+        
+        <item>TglAbsensi</item>
+        <item>IdKary</item>
+        <item>TglMsk</item>
+        <item>TglKlr</item>
+        <item>JamMsk</item>
+        <item>JamKlr</item>
+        <item>TelatMnt</item>
+        <item>Overtime</item>
+        <item>IsPotongCuti</item>
+        <item>IsCalendar</item>
+        <item>Keterangan</item>
+        <item>IsManual</item>
+        <item>IsTelat</item>
+        <item>IsMangkir</item>
+        <item>RowNum</item>
+
+    </string-array>
+
+    <string-array name="GetNewVersionAndroid_post">
+    </string-array>
+
+
+    <string-array name="GetNewVersionAndroid_get">
+        <item>Version</item>
+        <item>DateTime</item>
+        <item>ForceUpgrade</item>
+    </string-array>
+
+    <string-array name="GetVersioning_post">
+    </string-array>
+
+
+    <string-array name="GetVersioning_get">
+        <item>Version</item>
+        <item>CreatedDate</item>
+    </string-array>
+
+    <string-array name="RegisterToken_post">
+        <item>registeredToken</item>
+        <item>idKaryawan</item>
+        <item>isLogin</item>
+    </string-array>
+
+
+    <string-array name="RegisterToken_get">
+        <item>RegisterTokenResult</item>
+    </string-array>
+
+    <string-array name="GetKaryawanStatusAllowed_post">
+        <item>IdKary</item>
+    </string-array>
+
+
+    <string-array name="GetKaryawanStatusAllowed_get">
+        <item>IdKary</item>
+        <item>IsAllowCutiMin</item>
+        <item>IsAllowBatasForm</item>
+        <item>IsApprovalKhusus</item>
+    </string-array>
+
+
+</resources>

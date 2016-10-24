@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CutiCancellationActivity">
+
+    <item
+        android:id="@+id/action_save"
+        android:orderInCategory="100"
+        android:title="Save"
+        android:icon="@drawable/ic_checklist_white"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/action_edit"
+        android:orderInCategory="100"
+        android:title="Edit"
+        android:icon="@drawable/ic_edit"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/action_update"
+        android:orderInCategory="100"
+        android:title="Update"
+        android:icon="@drawable/ic_checklist_white"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/action_delete"
+        android:orderInCategory="200"
+        android:title="Delete"
+        android:icon="@drawable/ic_delete"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_mail"
+        android:orderInCategory="200"
+        android:title="Delete"
+        android:icon="@drawable/ic_mail_outline"
+        app:showAsAction="ifRoom"></item>
+
+</menu>

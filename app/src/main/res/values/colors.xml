@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#186cac</color>
+    <color name="colorPrimaryDark">#15588b</color>
+    <color name="colorPrimaryLight">#bb3788c6</color>
+    <!--<color name="colorAccent">#795548</color>-->
+    <color name="colorAccent">@color/colorPrimary</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#727272</color>
+    <color name="colorDivider">#29000000</color>
+    <color name="colorError">@color/material_red</color>
+    <color name="text">#FFFFFF</color>
+    <!--<color name="colorTransculent">#10000000</color>-->
+    <color name="colorTransculent">#10ffffff</color>
+    <!-- NAVIGATION DRAWER-->
+    <color name="nav_item_icon_tint_color">#333</color>
+    <color name="nav_item_text_color">#333</color>
+
+    <!-- Datetime picker-->
+
+    <color name="mdtp_accent_color">@color/colorPrimary</color>
+    <color name="mdtp_accent_color_dark">@color/colorPrimaryDark</color>
+    <color name="statusBarColor">#ffffff</color>
+
+</resources>

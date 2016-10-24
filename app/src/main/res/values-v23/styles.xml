@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <style name="profil_text_edittext">
+                <item name="android:layout_width">match_parent</item>
+                <item name="android:layout_height">wrap_content</item>
+                <item name="android:theme">@style/edittext_tint_profile</item>
+                <item name="android:drawableTint">@color/colorPrimary</item>
+                <item name="android:focusableInTouchMode">false</item>
+                <item name="android:textSize">@dimen/text_size_small</item>
+
+        </style>
+</resources>

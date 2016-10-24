@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/spacing_forthLine"
+    android:layout_below="@id/viewYear"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_marginTop="@dimen/spacing_small"
+
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="@dimen/cardview_default_radius"
+    app:cardElevation="@dimen/cardview_default_elevation"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:id="@+id/viewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/viewIcon"
+            android:padding="@dimen/spacing_small">
+
+
+            <TextView
+                android:id="@+id/txtNoTransaksi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Transaksi"
+                android:textStyle="bold"
+                android:paddingTop="@dimen/spacing_small"
+                />
+
+            <TextView android:id="@+id/txtNamaKaryawan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:layout_below="@+id/txtNoTransaksi"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginTop="@dimen/spacing_xsmall"
+                />
+
+
+            <TextView android:id="@+id/txtTipeForm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Form"
+                android:layout_below="@+id/txtNamaKaryawan"
+                android:textSize="@dimen/text_size_small"
+                />
+
+
+            <TextView android:id="@+id/txtTanggalTranskasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01/01/2015"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/txtNoTransaksi"
+                android:textSize="@dimen/text_size_small"
+                />
+
+
+            <TextView android:id="@+id/txtRejectRemark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alasan Reject"
+                android:textColor="@color/material_red"
+                android:textSize="@dimen/text_size_small"
+                android:visibility="visible"
+                android:layout_below="@id/txtTipeForm"
+                />
+
+            <ImageView android:id="@+id/imgApprovedHRD"
+                android:layout_width="@dimen/watermark"
+                android:layout_height="@dimen/watermark"
+                android:src="@drawable/ic_approved"
+                android:layout_below="@id/txtTanggalTranskasi"
+                android:layout_alignRight="@id/txtTanggalTranskasi"
+                android:alpha="0.5"
+                android:visibility="gone"
+                />
+
+
+            <ImageView android:id="@+id/imgRejectedHRD"
+                android:layout_width="@dimen/watermark"
+                android:layout_height="@dimen/watermark"
+                android:src="@drawable/ic_rejected"
+                android:alpha="0.5"
+                android:layout_below="@id/txtTanggalTranskasi"
+                android:layout_alignRight="@id/txtTanggalTranskasi"
+                android:visibility="gone"
+                />
+         </RelativeLayout>
+
+        <!--<include layout="@layout/layout_divider"/>-->
+        <LinearLayout android:id="@+id/viewIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/spacing_normal"
+            >
+
+           <ImageView android:id="@+id/imgApproved"
+               android:layout_width="@dimen/icon"
+               android:layout_height="@dimen/icon"
+               android:src="@drawable/ic_checklist_white"
+               android:padding="@dimen/spacing_normal"
+               android:background="@drawable/circle_view_green"
+               />
+            <ImageView android:id="@+id/imgReject"
+                android:layout_width="@dimen/icon"
+                android:layout_height="@dimen/icon"
+                android:src="@drawable/ic_close"
+                android:padding="@dimen/spacing_normal"
+                android:background="@drawable/circle_view_red"
+                android:visibility="gone"
+                />
+
+            <ImageView android:id="@+id/imgCancelled"
+                android:layout_width="@dimen/icon"
+                android:layout_height="@dimen/icon"
+                android:src="@drawable/ic_delete"
+                android:padding="@dimen/spacing_normal"
+                android:background="@drawable/circle_view_red"
+                android:visibility="gone"
+                />
+            <ImageView android:id="@+id/imgWaiting"
+                android:layout_width="@dimen/icon"
+                android:layout_height="@dimen/icon"
+                android:padding="@dimen/spacing_normal"
+                android:src="@drawable/ic_timer_sand"
+                android:background="@drawable/circle_view_blue_grey"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

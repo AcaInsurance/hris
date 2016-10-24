@@ -1,0 +1,189 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_absensi_form"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <include
+        layout="@layout/layout_loading_circle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/viewScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".Fragment.AbsensiFragment"
+        tools:showIn="@layout/activity_absensi_form"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView style="@style/my_cardview_style">
+
+                <LinearLayout style="@style/linearlayout_form">
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/my_textinputlayout_style"
+                        android:hint="Tanggal Transaksi"
+                        android:visibility="gone"
+
+                        >
+
+                        <EditText
+                            android:id="@+id/txtTanggalTranskasi"
+                            style="@style/form_edittext"
+                            android:drawableLeft="@drawable/ic_invitation" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/my_textinputlayout_style"
+                        android:hint="Approver"
+                        >
+
+
+                        <EditText
+                            android:id="@+id/txtApprover"
+                            style="@style/form_edittext"
+                            android:focusableInTouchMode="false"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                    <Button android:id="@+id/btnJenisForm"
+                        style="@style/button_form_dialog"
+                        android:drawableLeft="@drawable/ic_description"
+                        android:hint="Pilih Jenis Form"
+                        />
+                    <Button android:id="@+id/btnTipeForm"
+                        style="@style/button_form_dialog"
+                        android:drawableLeft="@drawable/ic_description"
+                        android:hint="Pilih Tipe Form"
+                        />
+
+
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/txtKeterangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_normal"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_small" />
+
+            <android.support.v7.widget.CardView style="@style/my_cardview_style">
+
+                <LinearLayout style="@style/linearlayout_form">
+
+
+                    <Button
+                        android:id="@+id/btnTanggalMulai"
+                        style="@style/button_form_dialog"
+                        android:drawableLeft="@drawable/ic_date_range"
+                        android:hint="Tanggal Mulai" />
+
+                    <Button
+                        android:id="@+id/btnTanggalBerakhir"
+                        style="@style/button_form_dialog"
+                        android:drawableLeft="@drawable/ic_date_range"
+                        android:hint="Tanggal Berakhir" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/lblJumlahHari"
+                        style="@style/my_textinputlayout_style"
+                        android:hint="Jumlah Hari">
+
+                        <EditText
+                            android:id="@+id/txtJumlahHari"
+                            style="@style/form_edittext"
+                            android:focusableInTouchMode="false"
+
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <Button
+                        android:id="@+id/btnJamMulai"
+                        style="@style/button_form_dialog"
+                        android:drawableLeft="@drawable/ic_access_time"
+                        android:hint="Jam Mulai" />
+
+
+                    <Button
+                        android:id="@+id/btnJamBerakhir"
+                        style="@style/button_form_dialog"
+                        android:drawableLeft="@drawable/ic_access_time"
+                        android:hint="Jam Berakhir" />
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/lblAlasan"
+                        style="@style/my_textinputlayout_style"
+                        android:hint="Alasan"
+                        >
+
+                        <EditText
+                            android:id="@+id/txtAlasan"
+                            style="@style/form_edittext" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView style="@style/my_cardview_style">
+
+
+                <LinearLayout
+                    android:id="@+id/viewSuratDokter"
+                    style="@style/linearlayout_form"
+                    android:visibility="gone"
+                    >
+
+                    <Button
+                        android:id="@+id/btnPickImage"
+                        style="@style/Base.Widget.AppCompat.Button.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pick Image" />
+
+                    <ImageView
+                        android:id="@+id/imgSuratDokter"
+                        android:layout_width="@dimen/image_width"
+                        android:layout_height="@dimen/image_height"
+                        android:layout_marginTop="@dimen/spacing_small"
+                        />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>
+

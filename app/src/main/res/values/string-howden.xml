@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="howden_post">
+        <item>DetilId</item>
+        <item>ClientName</item>
+        <item>Address1</item>
+        <item>Address2</item>
+        <item>InsuredName</item>
+        <item>InvoiceNo</item>
+        <item>BrandName</item>
+        <item>VehicleDescription</item>
+        <item>LicenseNo</item>
+        <item>ChassisNo</item>
+        <item>EngineNo</item>
+        <item>Year</item>
+        <item>Province</item>
+        <item>SeatCapacity</item>
+        <item>PeriodFrom</item>
+        <item>PeriodTo</item>
+        <item>BodyType</item>
+        <item>Cover</item>
+        <item>Casco</item>
+        <item>CascoRate</item>
+        <item>CascoPremium</item>
+        <item>SRCCRate</item>
+        <item>SRCCPremium</item>
+        <item>TSRate</item>
+        <item>TSPremium</item>
+        <item>FHLWRate</item>
+        <item>FHLWPremium</item>
+        <item>EQRate</item>
+        <item>EQPremium</item>
+        <item>TPLLimit</item>
+        <item>TPLRate</item>
+        <item>TPLPremium</item>
+        <item>PLLLimit</item>
+        <item>PLLRate</item>
+        <item>PLLPremium</item>
+        <item>PADLimit</item>
+        <item>PADRate</item>
+        <item>PADPremium</item>
+        <item>PAPLimit</item>
+        <item>PAPRate</item>
+        <item>PAPPremium</item>
+        <item>OthersAdditionalCoverageSI</item>
+        <item>OthersAdditionalCoverageRate</item>
+        <item>OthersAdditionalCoveragePremi</item>
+        <item>StampDutyAndAdminCost</item>
+        <item>Brokerage</item>
+        <item>VAT</item>
+        <item>ID</item>
+    </string-array>
+
+
+    <string-array name="howden_get">
+        <item>KwitansiNo</item>
+        <item>policyNo</item>
+        <item>filePath</item>
+        <item>response</item>
+    </string-array>
+
+</resources>

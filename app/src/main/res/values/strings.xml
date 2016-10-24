@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">HRIS</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="startup_message">Please wait...</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_my_profile">MyProfileActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_copyright">ACA HRIS \u00A9 2015 Copyright</string>
+    <string name="title_activity_scrolling">Profil</string>
+    <string name="title_activity_login">Login Activity</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_userID">User ID</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_first">FirstActivity</string>
+    <string name="title_activity_my_profil">MyProfilActivity</string>
+    <string name="title_activity_absensi_form">AbsensiFormActivity</string>
+    <string name="title_activity_cuti_form">CutiFormActivity</string>
+    <string name="prompt_save">save</string>
+    <string name="promp_keterangan">lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet</string>
+    <string name="prompt_error_photo">Gagal memilih foto</string>
+    <string name="prompt_error_empty_field">Field harus diisi</string>
+
+    <string name="success_create_form">Form berhasil dibuat</string>
+    <string name="failed_create_form">Form gagal dibuat</string>
+
+    <string name="success_update_form">Form berhasil diupdate</string>
+    <string name="failed_update_form">Form gagal diupdate</string>
+
+    <string name="success_delete_form">Form berhasil dihapus</string>
+    <string name="failed_delete_form">Form gagal dihapus</string>
+
+    <string name="success_approve_form">Form berhasil disetujui</string>
+    <string name="not_all_success_approve_form">Beberapa form gagal disetujui</string>
+    <string name="failed_approve_form">Form gagal disetujui</string>
+
+    <string name="success_reject_form">Form berhasil ditolak</string>
+    <string name="failed_reject_form">Form gagal ditolak</string>
+
+
+    <string name="success_send_email">Berhasil kirim email</string>
+    <string name="failed_send_email">Gagal kirim email</string>
+
+
+    <string name="success_send_image">Berhasil kirim foto</string>
+    <string name="failed_send_image">Gagal kirim foto</string>
+
+
+    <string name="prompt_error_invalid_periode_approval">Tanggal absensi sudah melewati batas waktu approval</string>
+    <string name="prompt_error_invalid_periode">Tanggal absensi sudah melewati batas waktu pengajuan form</string>
+    <string name="prompt_error_invalid_jumlah_hari_maksimal">Jumlah hari maksimal </string>
+    <string name="prompt_error_invalid_approval_khusus">Butuh approval khusus dari HRD</string>
+    <string name="prompt_error_invalid_jumlah_hari_batas">Jumlah hari melebihi batas</string>
+    <string name="prompt_error_invalid_tipe_kerja">Tipe Kerja Shift tidak diperbolehkan mengajukan form</string>
+    <string name="prompt_error_invalid_jam_min_max">Jam tidak sesuai dengan ketentuan minimal dan maksimum jam</string>
+    <string name="prompt_error_invalid_jam">Kesalahan input jam</string>
+    <string name="prompt_error_invalid_no_attachment">Silahkan upload foto surat dokter</string>
+    <string name="prompt_delete_dialog">Anda akan menghapus data ini ?</string>
+    <string name="prompt_delete">Hapus</string>
+    <string name="prompt_cancel">Tidak</string>
+    <string name="prompt_ya">Ya</string>
+    <string name="prompt_ok">Ok</string>
+    <string name="title_activity_absensi_list">AbsensiListActivity</string>
+    <string name="gagal_load_data">Gagal mengambil data</string>
+    <string name="title_activity_xrecycler">XRecyclerActivity</string>
+    <string name="prompt_no_more_data_load">Tidak ada data untuk ditampilkan</string>
+    <string name="title_activity_login_role">LoginRoleActivity</string>
+    <string name="title_activity_absensi_approval">AbsensiApprovalActivity</string>
+    <string name="prompt_error_failed_approved">Beberapa transaksi gagal dilakukan</string>
+    <string name="prompt_save_dialog">Semua perubahan form belum disimpan</string>
+    <string name="prompt_error_get_sisa_cuti">Gagal mengambil sisa cuti</string>
+    <string name="prompt_error_invalid_sisa_cuti">Sisa cuti tidak cukup</string>
+    <string name="prompt_error_irisan">Tidak dapat membuat form yang sama di hari yang sama</string>
+
+
+    <string name="title_activity_absensi_cuti_approval">AbsensiCutiApprovalActivity</string>
+    <string name="prompt_fill_reject_remark">Alasan Reject</string>
+    <string name="title_activity_cuti_cancellation_form">CutiCancellationForm</string>
+    <string name="title_activity_cuti_list_for_cancellation">CutiListForCancellationActivity
+    </string>
+    <string name="title_activity_cuti_cancellation_list">CutiCancellationListActivity</string>
+    <string name="title_activity_cuti_cancellation_approval">CutiCancellationApprovalActivity
+    </string>
+    <string name="title_activity_form_cancellation">FormCancellationActivity</string>
+    <string name="title_activity_load_form_cancellation">LoadFormCancellationActivity</string>
+    <string name="title_activity_absensi_cancellation_list">AbsensiCancellationListActivity</string>
+    <string name="title_activity_absensi_cancellation_approval">
+        AbsensiCancellationApprovalActivity
+    </string>
+    <string name="title_activity_first_new">FirstNewActivity</string>
+    <string name="timeout">Timeout. Silahkan coba lagi</string>
+    <string name="title_activity_header_picker">HeaderPickerActivity</string>
+    <string name="new_update">Update terbaru telah tersedia di Play Store</string>
+    <string name="title_activity_absensi_view">AbsensiViewActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="check_your_connection">Check your connection</string>
+    <string name="retry">retry</string>
+    <string name="lorem_ipsum">Lorem Ipsum</string>
+    <string name="gagal_kirim_email">Gagal mengirim email</string>
+    <string name="Email">Email</string>
+    <string name="gagal_upload_foto">Gagal upload foto</string>
+    <string name="gagal_mendapatkan_sisa_cuti">Gagal mendapatkan sisa cuti</string>
+    <string name="gagal_hitung_potong_cuti">Gagal hitung potong cuti</string>
+    <string name="prompt_error_invalid_passing_today">Tidak dapat melewati tanggal hari ini</string>
+    <string name="berhasil_kirim_email">Berhasil Kirim Email</string>
+</resources>

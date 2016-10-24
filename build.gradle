@@ -1,0 +1,21 @@
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.4'
+        classpath 'com.android.tools.build:gradle:2.2.1'
+//        classpath "com.android.databinding:dataBinder:1.0-rc1"
+        classpath 'com.google.gms:google-services:3.0.0'
+
+
+    }
+
+}
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
